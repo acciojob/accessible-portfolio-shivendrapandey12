@@ -1,16 +1,38 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <!-- Heading with ARIA role -->
+  <h1 role="heading">Shivendra Pandey - Portfolio</h1>
 
+  <!-- Navigation bar with ARIA role -->
+  <nav role="navigation">
+    <a href="#about">About</a> |
+    <a href="#projects">Projects</a> |
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Image with ARIA role and alt text -->
+  <img role="img" src="profile.jpg" alt="Profile photo of Shivendra Pandey">
+
+  <!-- Brief description section -->
+  <p>
+    Hello! I'm a passionate software developer who loves creating web applications and solving real-world problems through code.
+    This portfolio highlights some of my best projects and achievements.
+  </p>
+
+  <!-- List of skills or projects with ARIA roles -->
+  <ul role="list">
+    <li role="listitem">Restaurant Website – Built with HTML, CSS, and JavaScript</li>
+    <li role="listitem">Bill Generator – Developed using Python and MySQL</li>
+    <li role="listitem">Password Generator – Created with JavaScript and ReactJS</li>
+  </ul>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
